@@ -1,57 +1,69 @@
 # 🚗 Car Price Prediction using Multiple Linear Regression
 
-Predict the price of used cars using Machine Learning based on vehicle specifications such as brand, model, fuel type, transmission, mileage, engine size, horsepower, and more.
+A Machine Learning project that predicts the price of used cars based on their specifications such as brand, model, fuel type, transmission, mileage, engine size, and other vehicle attributes.
+
+---
+
+## 🌐 Live Demo
+
+🔗 Web App: https://car-price-prediction-z.streamlit.app/
+
+---
+
+## 📸 Project Preview
+
+> *(Add screenshots of your Streamlit application here)*
 
 ---
 
 ## 📌 Project Overview
 
-This project builds a Multiple Linear Regression model to predict used car prices.
+This project demonstrates a complete end-to-end Machine Learning workflow for predicting used car prices.
 
-The complete workflow includes:
+The project covers:
 
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
-- Feature Engineering
 - Data Preprocessing
-- Model Building
+- Feature Engineering
+- Multiple Linear Regression
 - Model Evaluation
-- Deployment Preparation
+- Model Deployment using Streamlit
 
 ---
 
 ## 💼 Business Problem
 
-The price of a used car depends on multiple factors, making manual estimation difficult.
+Estimating the market price of a used car is challenging because several factors influence its value.
 
-This project helps buyers and sellers estimate a fair market price using historical vehicle data.
+This project helps estimate a fair selling price by analyzing historical vehicle data and applying Machine Learning.
 
 ---
 
-## 🎯 Project Objective
+## 🎯 Project Objectives
 
-- Analyze the dataset
-- Discover price influencing factors
+- Understand the dataset
+- Analyze factors affecting car prices
 - Build an accurate prediction model
 - Evaluate model performance
-- Prepare the model for deployment
+- Deploy the trained model as a web application
 
 ---
 
-## 📊 Dataset Information
+# 📊 Dataset Information
 
-| Item | Value |
-|------|------|
+| Feature | Details |
+|----------|---------|
 | Dataset | Used Cars Dataset |
 | Rows | 71,593 |
-| Columns | (We'll fill after confirming final columns) |
+| Columns | 10 |
 | Missing Values | 0 |
 | Duplicate Rows Removed | 842 |
 | Target Variable | price |
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Tech Stack
 
 - Python
 - Pandas
@@ -59,13 +71,15 @@ This project helps buyers and sellers estimate a fair market price using histori
 - Matplotlib
 - Seaborn
 - Scikit-Learn
+- Streamlit
+- Joblib
 - Jupyter Notebook
 
 ---
 
-## 📈 Exploratory Data Analysis (EDA)
+# 📈 Exploratory Data Analysis
 
-The following analyses were performed:
+Performed analysis including:
 
 - Univariate Analysis
 - Bivariate Analysis
@@ -73,56 +87,71 @@ The following analyses were performed:
 - Correlation Analysis
 - Distribution Analysis
 - Outlier Detection
-- 
+
 ---
 
-## ⚙️ Data Preprocessing
+# ⚙️ Data Preprocessing
 
-The following preprocessing steps were performed:
+Steps performed:
 
 - Duplicate Removal
 - Feature & Target Separation
-- Categorical Encoding (OneHotEncoder)
-- Feature Scaling (StandardScaler)
-- ColumnTransformer
+- One-Hot Encoding
+- Feature Scaling
+- Column Transformer
 - Train-Test Split (80:20)
+- Pipeline Implementation
 
 ---
 
-## 🤖 Machine Learning Model
+# 🤖 Machine Learning Model
 
-Algorithm Used:
+**Algorithm Used**
 
 - Multiple Linear Regression
 
 ---
 
-## 📊 Model Performance
+# 📊 Model Performance
 
 | Metric | Score |
 |---------|--------|
 | R² Score | 0.8878 |
 | MAE | 2073.39 |
 | MSE | 9851820.63 |
-| RMSE | (We'll calculate and add) |
+| RMSE | *(Update manually)* |
 
 ---
 
-## 📂 Project Structure
+# 🚀 Streamlit Application Features
+
+- Interactive User Interface
+- Dynamic Dropdown Menus
+- Real-time Price Prediction
+- Clean Dashboard Layout
+- Machine Learning Pipeline Integration
+
+---
+
+# 📂 Project Structure
 
 ```text
 Car-Price-Prediction/
 │
+├── app/
+│   └── app.py
+│
 ├── data/
 │   └── raw/
-│
-├── notebook/
+│       └── cars_dataset.csv
 │
 ├── images/
 │
-├── app/
-│
 ├── models/
+│   └── used_car_price_predictor.pkl
+│
+├── notebook/
+│   └── Car_Price_Prediction.ipynb
 │
 ├── requirements.txt
 ├── README.md
@@ -131,10 +160,10 @@ Car-Price-Prediction/
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
 ```bash
-git clone <repository-link>
+git clone <repository-url>
 
 cd Car-Price-Prediction
 
@@ -143,30 +172,26 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run Project
+# ▶️ Run the Application
 
 ```bash
-jupyter notebook
+streamlit run app/app.py
 ```
 
-(I will update this with the Streamlit command after the app is built.)
-
 ---
 
-## 🔮 Future Improvements
-
-- Streamlit Deployment
-- Model Comparison
-- Hyperparameter Tuning
-- Feature Selection
-- Cloud Deployment
-
----
-
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Sahil Rohilla**
 
-LinkedIn: https://www.linkedin.com/in/sahil-rohilla-7436a635a/
+💼 LinkedIn:
+https://www.linkedin.com/in/sahil-rohilla-7436a635a/
+💻 GitHub:
+https://github.com/rohilasahil86-ai
 
-github: https://github.com/rohilasahil86-ai
+🌐 Live App:
+https://car-price-prediction-z.streamlit.app/
+
+---
+
+## ⭐ If you found this project useful, don't forget to give it a Star!
